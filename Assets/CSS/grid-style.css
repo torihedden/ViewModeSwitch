@@ -9,17 +9,32 @@ body {
   margin-top: 25px;
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 50px;
   border: solid 3px #47a3da;
-  position: relative;
 }
 
 .header {
+  padding: 10px 0px 10px 10px;
   border-bottom: solid 3px #47a3da;
+  text-align: right;
 }
 
 i {
   color: #47a3da;
-  margin: 2px;
+  margin: 4px;
+}
+
+.clicked {
+  color: #47a3da;
+}
+
+.unclicked {
+  color: #c0c0c0;
+}
+
+.all-items-sale {
+  /*border: solid 1px black;*/
+  width: 1106px;
 }
 
 .item-preview {
@@ -29,10 +44,11 @@ i {
 }
 
 .item-content {
-  width: 33%;
+  width: 28%;
+  height: 400px;
   padding: 25px;
   margin-top: 20px;
-  border: solid 1px black;
+  /*border: solid 1px black;*/
   display: inline-block;
   text-align: center;
   position: relative;
@@ -40,14 +56,14 @@ i {
 
 h3 {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.25em;
   color: #47a3da;
 }
 
 .item-price {
   margin: 10px 0px 10px 0px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.25em;
   color: #c0c0c0;
 }
 
@@ -55,6 +71,8 @@ h3 {
   color: #47a3da;
   /*border: solid 1px black;*/
   display: inline-block;
+  height: 20%;
+  margin: 20px;
 }
 
 .cart-button {
@@ -68,7 +86,8 @@ h3 {
 }
 
 .cart-button:hover {
-  transition: background 0.2s;
+  transition: background 0.3s;
+  /*this transition delay is used to soften the hover button styling change. Less harsh transition.*/
   background-color: #13425e;
 }
 
