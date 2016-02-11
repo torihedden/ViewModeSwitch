@@ -1,0 +1,22 @@
+.page-content {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: solid 4px #47a3da;
+}
+
+.header {
+  border-bottom: solid 4px #47a3da;
+}
+
+i {
+  color: #47a3da;
+  margin: 2px;
+}
+
+.item-content {
+  padding: 25px;
+  margin-top: 20px;
+  border: solid 1px black;
+  display: inline-block;
+}
