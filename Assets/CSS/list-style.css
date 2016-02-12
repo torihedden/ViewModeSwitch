@@ -1,3 +1,78 @@
 body {
-  
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+}
+
+.header {
+  padding: 10px 0px 10px 10px;
+  border-bottom: solid 3px #47a3da;
+  text-align: right;
+}
+
+.page-content {
+  /*width: 90%;*/
+  padding: 20px;
+  margin-top: 35px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 50px;
+  border: solid 3px #47a3da;
+}
+
+.blue {
+  color: #47a3da;
+  margin: 4px;
+}
+
+.gray {
+  color: #c0c0c0;
+  margin: 4px;
+}
+
+h3 {
+  border: solid 2px black;
+  text-align: center;
+  font-size: 2.25em;
+  color: #47a3da;
+  display: inline;
+}
+
+.item-preview {
+  color: #c0c0c0;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.item-price {
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+  font-size: 1.25em;
+  color: #c0c0c0;
+  border: solid 1px black;
+  display: inline;
+}
+
+.item-description {
+  color: #47a3da;
+  border: solid 1px black;
+  display: inline;
+  /*height: 20%;*/
+  margin: 20px;
+  width: 200px;
+}
+
+.cart-button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: white;
+  text-align: center;
+  background-color: #47a3da;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.cart-button:hover {
+  transition: background 0.3s;
+  /*this transition delay is used to soften the hover button styling change. Less harsh transition.*/
+  background-color: #13425e;
 }

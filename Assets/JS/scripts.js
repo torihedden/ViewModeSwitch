@@ -11,17 +11,6 @@ var listStyleSheet = document.getElementById("list-view");
 var gridStyleSheet = document.getElementById("default");
 
 
-// var allHref = document.getElementsByClassName("href");
-//
-// for (var i = 0; i < allHref.length; i ++){
-//   //allHref[i] = disable;
-// };
-
-//void(document.styleSheets.item(i).disabled=true);
-//document.getElementById("check1").disabled=true
-
-//if you click the list icon, the grid style sheet disables
-//the list style sheet will be un-disabled
 formatClick2.addEventListener("click", function (){
     gridStyleSheet.disabled = true;
     listStyleSheet.disabled = false;
