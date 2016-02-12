@@ -6,7 +6,7 @@ body {
 .page-content {
   /*width: 90%;*/
   padding: 20px;
-  margin-top: 25px;
+  margin-top: 35px;
   margin-left: 5%;
   margin-right: 5%;
   margin-bottom: 50px;
@@ -19,17 +19,14 @@ body {
   text-align: right;
 }
 
-i {
+.blue {
   color: #47a3da;
   margin: 4px;
 }
 
-.clicked {
-  color: #47a3da;
-}
-
-.unclicked {
+.gray {
   color: #c0c0c0;
+  margin: 4px;
 }
 
 .all-items-sale {

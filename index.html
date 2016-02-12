@@ -3,10 +3,8 @@
 <head>
   <title>Shopping Page</title>
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-  <link rel="stylesheet" href="./assets/css/grid-style.css">
-  <link rel="stylesheet" href="./assets/css/list-style.css">
-
-  <link href='https://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./assets/css/grid-style.css" id="grid">
+  <link rel="stylesheet" href="./assets/css/list-style.css" id="list">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
 </head>
@@ -16,8 +14,8 @@
   <section class = "page-content">
 
     <div class="header">
-      <i class="fa fa-th fa-2x clicked"></i>
-      <i class="fa fa-th-list fa-2x unclicked"></i>
+      <i class="fa fa-th fa-2x blue" id="grid-icon"></i>
+      <i class="fa fa-th-list fa-2x gray" id="list-icon"></i>
     </div>
 
     <!-- <div class="all-items-sale"> -->
@@ -112,7 +110,7 @@
 
       <div class="item-content">
         <i class="fa fa-plane fa-5x item-preview"></i>
-        <h3>Car</h3>
+        <h3>Plane</h3>
 
         <div class="item-price">$400</div>
 
@@ -125,6 +123,8 @@
 
   </section>
 
+
+  <script src = "assets/js/scripts.js"></script>
 </body>
 
 
