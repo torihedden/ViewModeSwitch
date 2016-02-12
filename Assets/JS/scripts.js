@@ -8,9 +8,30 @@ var formatClick2 = document.getElementById("list-icon");
 //targets the list view stylesheet. the grid view is the default style sheet.
 var listStyleSheet = document.getElementById("list-view");
 
-//how to make list stylesheetdisabled by default?
+var gridStyleSheet = document.getElementById("default");
+
+
+// var allHref = document.getElementsByClassName("href");
+//
+// for (var i = 0; i < allHref.length; i ++){
+//   //allHref[i] = disable;
+// };
+
+//void(document.styleSheets.item(i).disabled=true);
+//document.getElementById("check1").disabled=true
+
+//if you click the list icon, the grid style sheet disables
+//the list style sheet will be un-disabled
+formatClick2.addEventListener("click", function (){
+    gridStyleSheet.disabled = true;
+    listStyleSheet.disabled = false;
+});
+
+//if you click the grid icon, the list style sheet disables
+//the grid style sheet will be un-disabled
 formatClick.addEventListener("click", function (){
-  //
+    gridStyleSheet.disabled = false;
+    listStyleSheet.disabled = true;
 });
 
 
