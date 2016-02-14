@@ -5,12 +5,13 @@ var formatClick = document.getElementById("grid-icon");
 var formatClick2 = document.getElementById("list-icon");
 
 
-//targets the list view stylesheet. the grid view is the default style sheet.
+//targets the list view stylesheet.
 var listStyleSheet = document.getElementById("list-view");
-
+// the grid view is the default style sheet.
 var gridStyleSheet = document.getElementById("default");
 
-
+//if you click the list icon, the grid style sheet is disabled.
+//the list view style sheet is un-disabled
 formatClick2.addEventListener("click", function (){
     gridStyleSheet.disabled = true;
     listStyleSheet.disabled = false;
@@ -23,43 +24,20 @@ formatClick.addEventListener("click", function (){
     listStyleSheet.disabled = true;
 });
 
-
 //creates variable for each class name string
 var gridBlue = "fa fa-th fa-2x blue";
 var gridGray = "fa fa-th fa-2x gray";
 var listBlue = "fa fa-th-list fa-2x blue";
 var listGray = "fa fa-th-list fa-2x gray";
 
-//allows grid icon to toggle color on click
-formatClick.addEventListener("click", function (){
-  if (formatClick.className === (gridBlue)){
-    formatClick.className = gridGray;
-  } else if (formatClick.className === (gridGray)){
-    formatClick.className = gridBlue};
+//if you click the grid icon, turn it blue, and turn the list icon gray
+formatClick.addEventListener("click", function(){
+  formatClick.className = gridBlue;
+  formatClick2.className = listGray;
 });
 
-//forces neither icon to be the same color as each other.
-formatClick.addEventListener("click", function (){
-  if (formatClick.className === gridBlue && formatClick2.className === listBlue){
-    formatClick2.className = listGray;
-  } else if (formatClick.className === gridGray && formatClick2.className === listGray){
-    formatClick2.className = listBlue;
-  }
+//if you click the list icon, turn it blue, and turn the grid icon gray
+formatClick2.addEventListener("click", function(){
+  formatClick2.className = listBlue;
+  formatClick.className = gridGray;
 });
-
-//allows list icon to toggle color on click
-formatClick2.addEventListener("click", function (){
-  if (formatClick2.className === (listGray)){
-    formatClick2.className = listBlue;
-  } else if (formatClick2.className === (listBlue)){
-    formatClick2.className = listGray}
-});
-
-//this is the last piece added. it doesn't seem to work.
-// formatClick2.addEventListener("click", function (){
-//   if (formatClick2.className === listBlue && formatClick.className === gridBlue){
-//     formatClick.className === gridGray;
-//   } else if (formatClick2.className === listGray && formatClick.className === gridGray){
-//     formatClick.className === gridBlue;
-//   }
-// });
