@@ -39,7 +39,7 @@ body {
 }
 
 .item-content {
-  /*border: solid 1px red;*/
+  height: auto;
 }
 
 /*the name of the item*/
