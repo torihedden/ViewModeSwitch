@@ -17,6 +17,7 @@ body {
   margin-right: 5%;
   margin-bottom: 50px;
   border: solid 3px #47a3da;
+  text-align: center;
 }
 
 .blue {
@@ -29,64 +30,77 @@ body {
   margin: 4px;
 }
 
+#grid-icon:hover {
+  color: #47a3da;
+}
+
+#list-icon:hover {
+    color: #47a3da;
+}
+
 .item-content {
-  border: solid 2px red;
+  /*border: solid 1px red;*/
 }
 
 /*the name of the item*/
 h3 {
-  border: solid 2px coral;
-  text-align: center;
+  text-align: left;
   font-size: 1.3em;
   color: #47a3da;
   display: inline-block;
-  width: 13%;
+  width: 12%;
+  padding-left: 22px;
+  vertical-align: middle;
 }
 
+/*the gray icon depicting the product*/
 .item-preview {
   color: #c0c0c0;
   text-align: center;
   margin: 20px 0px;
-  border: solid 2px purple;
   width: 10%;
+  vertical-align: middle;
 }
 
+/*the item price*/
 .item-price {
-  margin: 10px 0px 10px 0px;
-  text-align: center;
+  text-align: left;
   font-size: 1.25em;
   color: #c0c0c0;
-  border: solid 1px red;
   display: inline-block;
-  width: 15%;
+  width: 12%;
+  vertical-align: middle;
 }
 
 .item-description {
   color: #47a3da;
-  border: solid 1px green;
   display: inline-block;
-  /*height: 20%;*/
-  margin: 20px;
   width: 40%;
+  padding: 0px 15px;
+  vertical-align: middle;
+  text-align: left;
 }
 
+/*Add to Cart Button*/
+
+/*small white plus icon on add to cart button*/
 .cart-plus {
     margin-right: 5px;
 }
 
 .cart-button {
   padding: 10px 20px;
-  margin-top: 20px;
   color: white;
   text-align: center;
   background-color: #47a3da;
   border-radius: 2px;
   display: inline-block;
   width: 10%;
+  vertical-align: middle;
 }
 
 .cart-button:hover {
-  transition: background 0.3s;
+  transition: background 0.4s;
   /*this transition delay is used to soften the hover button styling change. Less harsh transition.*/
   background-color: #13425e;
 }

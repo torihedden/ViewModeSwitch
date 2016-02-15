@@ -29,6 +29,14 @@ body {
   margin: 4px;
 }
 
+#grid-icon:hover {
+  color: #47a3da;
+}
+
+#list-icon:hover {
+    color: #47a3da;
+}
+
 .all-items-sale {
   /*border: solid 1px black;*/
   width: 1106px;
@@ -37,7 +45,7 @@ body {
 .item-preview {
   color: #c0c0c0;
   text-align: center;
-  margin: 20px 0px;
+  margin: 20px 0px 30px 0px;
 }
 
 .item-content {
@@ -83,7 +91,7 @@ h3 {
 }
 
 .cart-button:hover {
-  transition: background 0.3s;
+  transition: background 0.4s;
   /*this transition delay is used to soften the hover button styling change. Less harsh transition.*/
   background-color: #13425e;
 }
